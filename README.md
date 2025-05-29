@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Pintu Batesar
 - 👀 I’m interested in Programming
-- 🌱 I’m currently learning Applied Mathematics
+- 🌱 I’m currently learning Web development and Database management 
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
