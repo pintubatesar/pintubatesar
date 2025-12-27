@@ -1,0 +1,7 @@
+body { font-family: 'Poppins', sans-serif; text-align: center; background: #f9fafc; color: #222; margin: 0; }
+header { background: linear-gradient(120deg, #5b86e5, #36d1dc); color: white; padding: 80px 20px; }
+h1 { font-size: 2.5rem; }
+.btn { display: inline-block; margin: 10px; padding: 10px 25px; background: white; color: #333; text-decoration: none; border-radius: 25px; font-weight: 600; }
+.btn:hover { background: #222; color: white; }
+section { padding: 60px 20px; }
+footer { background: #f1f3f5; padding: 30px; color: #666; }
