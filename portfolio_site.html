@@ -1,116 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pintu Batesar | Web Developer Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <button id="theme-toggle">🌙 Dark Mode</button>
-    <h1>Hi, I'm Pintu</h1>
-    <p>Web Development Student at Algonquin College | Dean’s Honours List</p>
-    <div class="buttons">
-      <a href="#projects" class="btn">View My Projects</a>
-      <a href="#contact" class="btn">Contact Me</a>
+  <header id="hero">
+    <nav>
+      <h1 class="logo">Pintu<span>_Dev</span></h1>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+    <div class="hero-content">
+      <h2>Hello, I’m <span>Pintu</span></h2>
+      <h3 class="typed"></h3>
+      <p>Web Development Student at Algonquin College | Dean’s Honours List</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
     </div>
   </header>
 
-  <section class="about" id="about">
+  <section id="about" class="fade-up">
     <h2>About Me</h2>
-    <p>I’m a Web Development student at Algonquin College, Ottawa, passionate about designing user-friendly websites and writing clean, efficient code. I enjoy creating responsive designs, solving coding challenges, and continuously learning new technologies. Currently, I’m seeking a Co-op placement for Summer 2026.</p>
+    <p>I’m a Web Development student at Algonquin College, Ottawa. I love creating responsive, interactive web applications and exploring modern technologies. I aim to build experiences that merge creativity and functionality. Currently seeking a Co-op for Summer 2026.</p>
   </section>
 
-  <section id="education" class="education-section">
-  <h2 class="section-title">Education</h2>
-
-  <div class="education-item">
-    <h3>Algonquin College, Ottawa</h3>
-    <p class="degree">Diploma in Web Development</p>
-    <p class="details">Expected Graduation: April 2027</p>
-    <p class="details">Dean’s Honour List | Co-op: May – December 2026</p>
-  </div>
-
-  <div class="education-item">
-    <h3>Jamia Millia Islamia, New Delhi</h3>
-    <p class="degree">Bachelor’s Degree in Applied Mathematics</p>
-    <h4 class="details">First Division With Distinction</h4>
-    <p class="details">Strong foundation in Programming(C/C++), Cryptography, Designing(HTML/CSS/JAVASCRIPT), and Applied Mathematics</p>
-</section>
-
-
-  <section class="skills" id="skills">
+  <section id="skills" class="fade-up">
     <h2>Skills</h2>
     <div class="skills-grid">
       <div class="skill">HTML / CSS / JavaScript</div>
-      <div class="skill">C# / Python</div>
+      <div class="skill">React / C# / Python</div>
       <div class="skill">SQL / Database Design</div>
       <div class="skill">Linux / Git</div>
       <div class="skill">Figma / Photoshop</div>
       <div class="skill">Machine Learning Basics</div>
-       <div class="skill">Applied Mathematics</div>
     </div>
   </section>
 
-  <section class="projects" id="projects">
+  <section id="projects" class="fade-up">
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <img src="Images/Dasher app design.png" alt="Dasher Web App" style="width: fit-content;">
-        <div class="content">
+        <img src="Images/Dasher app design.png" alt="Dasher Web App" />
+        <div class="project-info">
           <h3>Dasher Web App</h3>
-          <p class="tags">HTML, CSS</p>
-          <p>Created a modern, responsive website showcasing best UI practices.</p>
+          <p>Modern, responsive website showcasing clean UI design principles.</p>
+          <span>HTML / CSS</span>
         </div>
       </div>
+
       <div class="project-card">
-        <img src="Images/Roamly-Travel App.png" alt="Figma Travel App">
-        <div class="content">
+        <img src="Images/Roamly-Travel App.png" alt="Figma Travel Planner" />
+        <div class="project-info">
           <h3>Figma Travel Planner App</h3>
-          <p class="tags">UI/UX, Figma</p>
-          <p>Designed an interactive travel planning app prototype with collaborative features.</p>
+          <p>Interactive prototype for multi-day trip planning with team collaboration.</p>
+          <span>UI/UX / Figma</span>
         </div>
       </div>
+
       <div class="project-card">
-        <img src="Images/Linux.jpg" alt="Linux">
-        <div class="content">
+        <img src="Images/Linux.jpg" alt="Linux Practice" />
+        <div class="project-info">
           <h3>Linux Commands</h3>
-          <p class="tags">Linux</p>
-          <p>Used basic Linux commands to navigate directories, manage files, and transfer data between systems.</p>
+          <p>Practiced essential Linux commands for file navigation and data transfer.</p>
+          <span>Linux / Terminal</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section id="contact" class="fade-up">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:pint0055@algonquinlive.com">pint0055@algonquinlive.com</a></p>
-    <p>Mobile: (+1) 343-552-3200</p>
-    <div class="socials">
-      <a href="https://linkedin.com/in/pintu25" target="_blank">
-        <img src="Images/icons8-linkedin-48.jpg" alt="linkedin" style="width: 54px;">
-      </a>
-      <a href="https://github.com/pintubatesar" target="_blank">
-        <img src="Images/github-1.jpg" alt="Github">
-      </a>
+    <p>Let’s connect! Feel free to reach out for collaborations or opportunities.</p>
+    <div class="contact-links">
+      <a href="mailto:pint0055@algonquinlive.com" class="btn">📧 Email Me</a>
+      <div class="socials">
+        <a href="https://linkedin.com/in/pintu25" target="_blank">LinkedIn</a>
+        <a href="https://github.com/pintubatesar" target="_blank">GitHub</a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Pintu Batesar | Built with ❤️ using HTML & CSS</p>
+    <p>© 2025 Pintu Batesar — Crafted with ❤️ using HTML, CSS & JS</p>
   </footer>
 
-  <script>
-    const toggleBtn = document.getElementById('theme-toggle');
-    toggleBtn.addEventListener('click', () => {
-      const isDark = document.body.getAttribute('data-theme') === 'dark';
-      document.body.setAttribute('data-theme', isDark ? 'light' : 'dark');
-      toggleBtn.textContent = isDark ? '🌙 Dark Mode' : '☀️ Light Mode';
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
