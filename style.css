@@ -1,0 +1,150 @@
+   :root {
+      --bg-color: #f9fafc;
+      --text-color: #222;
+      --primary-color: #5b86e5;
+      --secondary-color: #36d1dc;
+      --card-bg: white;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #1e1e1e;
+      --text-color: #f5f5f5;
+      --primary-color: #7aa2f7;
+      --secondary-color: #36d1dc;
+      --card-bg: #2b2b2b;
+    }
+
+    * 
+    { box-sizing: border-box; margin: 0; padding: 0; }
+    body 
+      { font-family: 'Poppins', sans-serif; 
+        background: var(--bg-color); color: var(--text-color); line-height: 1.6; 
+        transition: background 0.3s, color 0.3s; }
+    header 
+    { text-align: center; padding: 80px 20px; background: linear-gradient(120deg, var(--primary-color), var(--secondary-color)); color: white; position: relative; }
+    header h1 { font-size: 2.8rem; }
+    header p { font-size: 1.2rem; margin-top: 10px; }
+    header .buttons { margin-top: 30px; }
+    .btn { text-decoration: none; background: white; color: #333; padding: 10px 25px; border-radius: 30px; font-weight: 600; margin: 5px; transition: 0.3s; display: inline-block; }
+    .btn:hover { background: #222; color: white; }
+
+    #theme-toggle { position: absolute; top: 20px; right: 20px; background: white; color: #333; border: none; border-radius: 20px; padding: 8px 16px; cursor: pointer; font-weight: 600; }
+
+    section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 40px; color: var(--text-color); }
+
+    .about p { text-align: center; max-width: 700px; margin: auto; font-size: 1.1rem; }
+    
+    /* Education Section Styling */
+.education-section {
+  background: #f9fafb;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0078ff;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+.education-item {
+  background: white;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.education-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.education-item h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 5px;
+}
+
+.degree {
+  color: #0078ff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.details {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+    
+    .skills-grid
+      { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px; 
+        text-align: center;
+        }
+
+    .skill
+      {
+         
+         padding: 20px; 
+         border-radius: 12px;
+         box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+         font-weight: 500;
+         transition: 0.4s;
+        }
+
+    .skill:hover 
+        {background: lightblue;
+        }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+    .project-card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: background 0.3s; }
+    .project-card img { width: 100%; height: 180px; object-fit: cover; }
+    .project-card .content { padding: 20px; }
+    .project-card h3 { margin-bottom: 10px; }
+    .tags { color: #555; font-size: 0.9rem; margin-bottom: 10px; }
+    .project-card a { text-decoration: none; color: var(--primary-color); font-weight: 600; }
+
+    .contact { text-align: center; }
+    .contact p { margin-bottom: 10px; }
+    .socials a { color: var(--primary-color); margin: 0 10px; font-size: 1.5rem; text-decoration: none; }
+    .socials img{
+      width: 45px;
+      }
+    .resume-btn { margin-top: 20px; text-decoration: none; background: var(--primary-color); color: white; padding: 10px 25px; border-radius: 30px; font-weight: 600; transition: 0.3s; display: inline-block; }
+    .resume-btn:hover { background: var(--secondary-color); }
+
+    footer {
+         text-align: center;
+         padding: 30px;
+         background: #f1f3f5;
+         color: #666; }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+      .btn { padding: 8px 18px; }
+      section { padding: 60px 15px; }
+    }

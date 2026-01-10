@@ -7,66 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #f9fafc;
-      --text-color: #222;
-      --primary-color: #5b86e5;
-      --secondary-color: #36d1dc;
-      --card-bg: white;
-    }
-
-    [data-theme="dark"] {
-      --bg-color: #1e1e1e;
-      --text-color: #f5f5f5;
-      --primary-color: #7aa2f7;
-      --secondary-color: #36d1dc;
-      --card-bg: #2b2b2b;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Poppins', sans-serif; background: var(--bg-color); color: var(--text-color); line-height: 1.6; transition: background 0.3s, color 0.3s; }
-    header { text-align: center; padding: 80px 20px; background: linear-gradient(120deg, var(--primary-color), var(--secondary-color)); color: white; position: relative; }
-    header h1 { font-size: 2.8rem; }
-    header p { font-size: 1.2rem; margin-top: 10px; }
-    header .buttons { margin-top: 30px; }
-    .btn { text-decoration: none; background: white; color: #333; padding: 10px 25px; border-radius: 30px; font-weight: 600; margin: 5px; transition: 0.3s; display: inline-block; }
-    .btn:hover { background: #222; color: white; }
-
-    #theme-toggle { position: absolute; top: 20px; right: 20px; background: white; color: #333; border: none; border-radius: 20px; padding: 8px 16px; cursor: pointer; font-weight: 600; }
-
-    section { padding: 80px 20px; max-width: 1000px; margin: auto; }
-    h2 { text-align: center; margin-bottom: 40px; color: var(--text-color); }
-
-    .about p { text-align: center; max-width: 700px; margin: auto; font-size: 1.1rem; }
-
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; text-align: center; }
-    .skill { background: var(--card-bg); padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); font-weight: 500; transition: background 0.3s; }
-
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-    .project-card { background: var(--card-bg); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: background 0.3s; }
-    .project-card img { width: 100%; height: 180px; object-fit: cover; }
-    .project-card .content { padding: 20px; }
-    .project-card h3 { margin-bottom: 10px; }
-    .tags { color: #555; font-size: 0.9rem; margin-bottom: 10px; }
-    .project-card a { text-decoration: none; color: var(--primary-color); font-weight: 600; }
-
-    .contact { text-align: center; }
-    .contact p { margin-bottom: 10px; }
-    .socials a { color: var(--primary-color); margin: 0 10px; font-size: 1.5rem; text-decoration: none; }
-
-    .resume-btn { margin-top: 20px; text-decoration: none; background: var(--primary-color); color: white; padding: 10px 25px; border-radius: 30px; font-weight: 600; transition: 0.3s; display: inline-block; }
-    .resume-btn:hover { background: var(--secondary-color); }
-
-    footer { text-align: center; padding: 30px; background: #f1f3f5; color: #666; }
-
-    @media (max-width: 768px) {
-      header h1 { font-size: 2rem; }
-      header p { font-size: 1rem; }
-      .btn { padding: 8px 18px; }
-      section { padding: 60px 15px; }
-    }
-  </style>
+  <link href="style.css" rel="stylesheet"> 
 </head>
 <body>
   <header>
@@ -83,6 +24,24 @@
     <h2>About Me</h2>
     <p>I’m a Web Development student at Algonquin College, Ottawa, passionate about designing user-friendly websites and writing clean, efficient code. I enjoy creating responsive designs, solving coding challenges, and continuously learning new technologies. Currently, I’m seeking a Co-op placement for Summer 2026.</p>
   </section>
+
+  <section id="education" class="education-section">
+  <h2 class="section-title">Education</h2>
+
+  <div class="education-item">
+    <h3>Algonquin College, Ottawa</h3>
+    <p class="degree">Diploma in Web Development</p>
+    <p class="details">Expected Graduation: April 2027</p>
+    <p class="details">Dean’s Honour List | Co-op: May – December 2026</p>
+  </div>
+
+  <div class="education-item">
+    <h3>Jamia Millia Islamia, New Delhi</h3>
+    <p class="degree">Bachelor’s Degree in Applied Mathematics</p>
+    <h4 class="details">First Division With Distinction</h4>
+    <p class="details">Strong foundation in Programming(C/C++), Cryptography, Designing(HTML/CSS/JAVASCRIPT), and Applied Mathematics</p>
+</section>
+
 
   <section class="skills" id="skills">
     <h2>Skills</h2>
@@ -101,30 +60,27 @@
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="XML Parser Project">
+        <img src="Images/Dasher app design.png" alt="Dasher Web App" style="width: fit-content;">
         <div class="content">
-          <h3>XML Data Parser</h3>
-          <p class="tags">Python, XML</p>
-          <p>Parsed and displayed structured student data automatically using Python.</p>
-          <a href="https://github.com/pintubatesar" target="_blank">View on GitHub →</a>
+          <h3>Dasher Web App</h3>
+          <p class="tags">HTML, CSS</p>
+          <p>Created a modern, responsive website showcasing best UI practices.</p>
         </div>
       </div>
       <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="Responsive Web Design">
+        <img src="Images/Roamly-Travel App.png" alt="Figma Travel App">
         <div class="content">
-          <h3>Responsive Web Design</h3>
-          <p class="tags">HTML, CSS, JS</p>
-          <p>Created a modern, responsive multi-page website showcasing best UI practices.</p>
-          <a href="https://github.com/pintubatesar" target="_blank">View on GitHub →</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="Figma Travel App">
-        <div class="content">
-          <h3>Figma Travel Planner</h3>
+          <h3>Figma Travel Planner App</h3>
           <p class="tags">UI/UX, Figma</p>
           <p>Designed an interactive travel planning app prototype with collaborative features.</p>
-          <a href="https://github.com/pintubatesar" target="_blank">View on GitHub →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="Images/Linux.jpg" alt="Linux">
+        <div class="content">
+          <h3>Linux Commands</h3>
+          <p class="tags">Linux</p>
+          <p>Used basic Linux commands to navigate directories, manage files, and transfer data between systems.</p>
         </div>
       </div>
     </div>
@@ -132,12 +88,16 @@
 
   <section class="contact" id="contact">
     <h2>Contact</h2>
-    <p>📧 Email: <a href="mailto:pint0055@algonquinlive.com">pint0055@algonquinlive.com</a></p>
+    <p>Email: <a href="mailto:pint0055@algonquinlive.com">pint0055@algonquinlive.com</a></p>
+    <p>Mobile: (+1) 343-552-3200</p>
     <div class="socials">
-      <a href="https://linkedin.com/in/pintu25" target="_blank"></a>
-      <a href="https://github.com/pintubatesar" target="_blank">💻</a>
+      <a href="https://linkedin.com/in/pintu25" target="_blank">
+        <img src="Images/icons8-linkedin-48.jpg" alt="linkedin" style="width: 54px;">
+      </a>
+      <a href="https://github.com/pintubatesar" target="_blank">
+        <img src="Images/github-1.jpg" alt="Github">
+      </a>
     </div>
-    <a href="Pintu_Batesar_Resume.pdf" class="resume-btn" download>📄 Download Resume</a>
   </section>
 
   <footer>
